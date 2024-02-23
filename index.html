@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda de telefone</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div class="container">
         <header>
-            <h1>Agenda de Contatos</h1>
+            <h1>AGENDA DE CONTATOS</h1>
         </header>
-        <form>
-            
+        <form id="form-contato">
+            <input type="text" id="nome-contato" required placeholder="Nome" img src="./imagens/contato.png">
+            <img src="./imagens/contato.png" alt="imagem de contato">
+            <input type="number" id="numero-contato" required placeholder="Telefone">
+            <img src="./imagens/telefone.png" alt="">
+            <button type="submit">Adicionar +</button>
         </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do contato</th>
+                    <th>Número</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>---</td>
+                    <td>(--) ---- - ----</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
